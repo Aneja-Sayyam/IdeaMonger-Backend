@@ -1,0 +1,81 @@
+*{
+    padding: 0%;
+    margin: none;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(230, 230, 230);
+}
+.logo{
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    /* margin: none; */
+}
+.container{
+    width: 60vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: 5vh auto auto auto;
+    /* align-items: center; */
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 90px 100px;
+    background-color: #fff;
+    overflow-y: scroll;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(107, 104, 104, 0.65), -5px -5px 80px rgba(107, 104, 104, 0.678);
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+
+    /* background-color: rgb(177, 23, 23); */
+}
+#firstName,#lastName,#email,#passwd,#countryCode,#phoneNumber{
+    padding: 10px;
+}
+#firstName,#lastName,#email,#passwd,#countryCode,#phoneNumber:focus{
+    outline-color: #1a73e8;
+}
+
+#website,#sex,#highSchool,#college,#expertise,#language,#skills,#job{
+    padding: 10px;
+}
+#website,#sex,#highSchool,#college,#expertise,#language,#skills,#job:focus{
+    outline-color: #1a73e8;
+}
+option{
+    color: #1a73e8;
+}
+#accountInfo{
+    display: flex;
+}
+#profileInfo{
+    display: none;
+}
+.btn{
+    padding: 8px 20px;
+    margin-top: 10px;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 4px;
+}
+.btn:hover{
+    background-color: rgb(16, 104, 177);
+}

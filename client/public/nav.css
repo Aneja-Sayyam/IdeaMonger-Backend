@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda One', cursive;
+}
+.navbar{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    color: #d1d1d1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.search{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#search-Icon{
+    cursor: pointer;
+}
+.logo{
+    font-size: x-large;
+    color: white;
+}
+.nav-links{
+    font-size: medium;
+    padding: 0 20px;
+}
+.active{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}

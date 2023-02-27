@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(184, 184, 184);
+}
+hr{
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.usersInbox{
+    background-color: white;
+    color: black;
+    margin: 10vh 0 0 10vw;
+    width: fit-content;
+    height : 100px;
+    float: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.chatbox{
+    width: 500px;
+    height: 700px;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: white;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    margin-left: 10px;
+}
+.pic,.username{
+    margin-left: 20px;
+}
+.chat-area{
+    height: 80%;
+    width: 100%;
+    /* margin-top: 10px; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+.datestamp{
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    font-size: smaller;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.message-box{
+    color: white;
+    background-color: black;
+    border-radius: 0 50px 50px 50px;
+    width: fit-content;
+    max-width: 70%;
+    height: fit-content;
+    padding: 5px 10px 5px 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    word-wrap: break-word;
+}
+.time{
+    height: auto;
+    width: auto;
+    font-size: smaller;
+    float: right;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    /* margin-bottom: 10px; */
+}
+.input-area{
+    height: 10%;    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(214, 214, 214);
+    padding: 10px;
+    padding-top: 15px;
+}
+#messageInput{
+    height: 80%;
+    width: 80%;
+    margin: 0 10px;
+    border-radius: 50px;
+    border-style: solid;
+    padding: 10px;
+}
+#messageInput:focus{
+    outline: none;
+}
+#emote,#send{
+    height: 80%;
+    cursor: pointer;
+}
+.right{
+    margin-left: auto;
+    border-radius: 50px 0 50px 50px;
+}

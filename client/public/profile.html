@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"  rel="stylesheet">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Idea Monger</div>
+        <div class="search"><span class="material-icons" id="search-Icon">
+          search
+          </span></div>
+        <div class="links">
+          <a href="./post.html"><span class="nav-links active">Home</span></a>
+          <a href="#"><span class="nav-links">Events</span></a>
+          <a href="http://localhost:3000/client/public/chat/index.html" target="_self"><span class="nav-links">Chats</span></a>
+          <a href="./profile.html"><span class="nav-links">Profile</span></a>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="header">
+            <div class="timeline-container">
+                <!-- <div class="timeline-pic-container">
+                    <img id="timeline-pic" src="../includes/806314.jpg" alt="">
+                </div> -->
+                <div class="profile-pic-container">
+                    <img id="profile-pic" src="../includes/profilepic.jpg" alt="profile pic">
+                </div>
+            </div>
+            <div class="account">
+                <div class="some-btn">
+                    <a href="#post-box"><div id="post-btn">View Posts</div></a>
+                    <div id="follow-btn">Follow</div>
+                    <div id="unfollow-btn">Unfollow</div>
+                    <div id="edit-profile-btn">Edit Profile</div>
+                </div>
+                <div class="user-container">
+                    <div class="followers">
+                        <span class="label">Followers</span>
+                        <sapn class="label" id="follower-value">0</span>
+                    </div>
+                    <div class="user-info">
+                        <span class="username" id="username">Blah Blah</span>
+                        <span class="email" id="email">Blah@blah.com</span>
+                        <span class="website" id="website">blah.com</span>
+                    </div>
+                    <div class="followings">
+                        <span class="label">Followings</span>
+                        <span class="label" id="following-value">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="detail-container shadow">
+                <div class="detail">About</div>
+            </div>
+            <div class="detail-container shadow">
+                <div class="detail">Education</div>
+            </div>
+            <div class="detail-container shadow">
+                <div class="detail">Skills & Endorsements</div>
+            </div>
+            <div class="detail-container shadow">
+                <div class="detail">Fields of Interest</div>
+            </div>
+            <div class="detail-container shadow">
+                <div class="detail">Experience</div>
+            </div>
+            <div class="detail-container shadow">
+                <div class="detail">Activity Log</div>
+            </div>
+        </div>
+
+        <div id="post-box" class="post-box">
+            <div class="posts shadow"><div class="post-label">Posts</div></div>
+            <div class="posts-container">
+                <div class="post-container">
+                    <div class="post shadow"><img class="post-image" src="../includes/GSyri6Z05BWS3o-Bw3Ki4oR8hZAQMkY0HgYAq4It__E.jpg" alt=""></div>
+                    <div class="post shadow"><img src="../includes/806314.jpg" alt="" class="post-image"></div>
+                    <div class="post shadow"><img class="post-image" src="../includes/GSyri6Z05BWS3o-Bw3Ki4oR8hZAQMkY0HgYAq4It__E.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container">
+        <div class="edit-profile-modal">
+            <div class="heading">Profile Information</div>
+                <div class="inputs">
+                    <input type="url" name="website" id="website" placeholder="Website">
+                    <select name="sex" id="sex" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <!-- <h5>Education</h5> -->
+                    <input type="text" name="highSchool" id="highSchool" placeholder="High School">
+                    <input type="text" name="College" id="college" placeholder="College">
+                    <input type="text" name="expertise" id="expertise" placeholder="Field of Expertise">
+                    <input type="text" name="language" id="language" placeholder="Programming Language">
+                    <input type="text" name="skills" id="skills" placeholder="Skills">
+                    <input type="text" name="job" id="job" placeholder="Job">
+                </div>
+                <div class="btn" id="savebtn">Save</div>
+        </div>
+    </div>
+</body>
+</html>

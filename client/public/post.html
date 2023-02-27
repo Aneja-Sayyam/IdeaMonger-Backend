@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./post.css" />
+    <link rel="stylesheet" href="./nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"  rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">Idea Monger</div>
+      <div class="search"><span class="material-icons" id="search-Icon">
+        search
+        </span></div>
+      <div class="links">
+        <a href="#"><span class="nav-links active">Home</span></a>
+        <a href="#"><span class="nav-links">Events</span></a>
+        <a href="http://localhost:3000/client/public/chat/index.html" target="_self"><span class="nav-links">Chats</span></a>
+        <a href="./profile.html"><span class="nav-links">Profile</span></a>
+      </div>
+  </div>
+    <div class="main-container">
+
+      <div class="box" id="newPost">
+        <div class="description-container">
+          <input type="text" name="postDescription"
+          id="postDescription"
+          placeholder="About Your Post">
+        </div>
+        <div class="img">
+          <div class="btn" id="imageBtn">
+            Images <input type="file" name="postImage" id="postImage" />
+          </div>
+  
+          <div id="newPostImage">
+            <img id="newImage" src="" alt="">
+          </div>
+        </div>
+        
+        <div class="btn" id="submit">Submit</div>
+      </div>
+
+        <!-- <div class="box">
+          <div class="postHeader">
+            <div class="profile-pic"><img src="../includes/baseline_account_circle_black_18dp.png" id="profile-pic" alt=""></div>
+            <span>Username</span>
+          </div>
+          <div class="imageContainer"><img src="../../uploads/rohit.jpg" id="post-image" alt="" /></div>
+  
+          <div class="opinion">
+            <div class="icon">
+              <span class="material-icons" id="upvote"> favorite_border </span>
+            </div>
+            <div class="icon">
+              <span class="material-icons" id="comment"> comment </span>
+            </div>
+          </div>
+      </div> -->
+      
+    </div>
+    <script src="./post.js"></script>
+  </body>
+</html>

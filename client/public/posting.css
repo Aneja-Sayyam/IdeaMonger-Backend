@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: fit-content;
+    height: auto;
+    align-items: center;
+    margin: 10vh auto;
+    background-color: rgb(173, 84, 84);
+}
+.photoInput{
+    width: fit-content;
+    padding: 10px;
+}
+.photoDescription{
+    width: fit-content;
+    padding:20px;
+}
+
+#photoInput{
+    overflow: hidden;
+}
+#photoDescription { 
+    display: block; 
+    overflow: hidden; 
+    resize: none;
+    padding: 20px;
+} 
+
+.postContainer{
+    /* background-color: rgba(168, 166, 166, 0.849); */
+    margin: 10vh auto;
+    width: fit-content;
+    display: flex;
+    padding: 10px;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(173, 143, 143);
+    width: 400px;
+    height: 600px;
+    margin-bottom: 30px;
+    /* margin: 10vh auto; */
+    /* padding: 15px; */
+}
+
+.imageDisplay{
+    flex : 5;
+    background-color: rgba(0, 0, 0, 0.904);
+    display: flex;
+    width: inherit;
+    /* align-content: flex-start; */
+    /* justify-content: center; */
+    align-items: center;
+    border: 2px solid black;
+}
+
+#image{
+    width: inherit;
+}
+.imageDescription{
+    flex :2;
+    padding: 20px 20px;
+    overflow: auto;
+    background-color: rgb(223, 221, 221);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+.userId{
+    font-weight: bold;
+    /* padding-bottom: ; */
+}
+.text{
+    overflow: auto;
+}

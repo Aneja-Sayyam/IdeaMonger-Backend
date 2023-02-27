@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./signUp.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form" id="accountInfo">
+            <h2 class="logo">Account Information</h2>
+            <div class="input">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="password" name="passwd" id="passwd" placeholder="Password" required>
+                    <select name="countryCode" id="countryCode" required>
+                        <option value="+91">+91</option>
+                    </select>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" pattern="[0-9]{10}" required>
+            </div>
+            <div class="btn" id="signUpBtn">Sign Up</div>
+        </div>
+
+        <div class="form" id="profileInfo">
+            <div class="logo">Profile Information</div>
+            <div class="input">
+                <input type="url" name="website" id="website" placeholder="Website">
+                <select name="sex" id="sex" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+                <!-- <h5>Education</h5> -->
+                <input type="text" name="highSchool" id="highSchool" placeholder="High School">
+                <input type="text" name="College" id="college" placeholder="College">
+                <input type="text" name="expertise" id="expertise" placeholder="Field of Expertise">
+                <input type="text" name="language" id="language" placeholder="Programming Language">
+                <input type="text" name="skills" id="skills" placeholder="Skills">
+                <input type="text" name="job" id="job" placeholder="Job">
+                
+            </div>
+            <div class="btn" id="profileBtn">Submit</div>
+        </div>
+    </div>
+    <script src="./signUp.js"></script>
+</body>
+</html>
